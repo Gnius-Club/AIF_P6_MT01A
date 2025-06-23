@@ -1,0 +1,275 @@
+!DOCTYPE html
+html lang=es
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titlePlaybook-P6-S01Atitle
+    !-- Los estilos y scripts se cargan desde archivos externos --
+    link rel=stylesheet href=style.css
+    link rel=stylesheet href=httpsfonts.googleapis.comcss2family=Robotowght@400;500;700&display=swap
+    link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.0.0cssall.min.css
+head
+body
+
+    header
+        h1span class=book-icon📋span strongPlaybook Sesión 1A 6to Primariastrongh1
+        div class=header-widgets
+            div class=timer-container
+                span id=timer⏱️ 0000span
+                button id=startStopStartbutton
+                button id=resetResetbutton
+            div
+            div class=theme-toggle
+                i class=fas fa-suni
+                label class=switch
+                    input type=checkbox id=theme-toggle-input
+                    span class=slider roundspan
+                label
+                i class=fas fa-mooni
+            div
+        div
+    header
+
+    div class=main-container
+        aside class=activity-list
+            h2Actividadesh2
+            ul
+                lia href=#activity-0📝ali
+                lia href=#activity-11ali
+                lia href=#activity-22ali
+                lia href=#activity-33ali
+                lia href=#activity-44ali
+            ul
+        aside
+
+        main class=content
+            div class=progress-bar
+                div class=progressdiv
+            div
+
+            button id=toggle-dialoguesMostrar todos los diálogosbutton
+
+            div class=activity-card id=activity-0
+                h2span class=book-icon📝span De un Vistazo Sesión Gniush2
+                p class=overview-subtitleResumen rápido de objetivos, materiales y preparación para el facilitador.p
+                div class=overview-table-container
+                    table
+                        thead
+                            tr
+                                th style=width 50%;Objetivos, Tácticas y Entregableth
+                                th style=width 50%;Materiales Específicos y Preparación Previath
+                            tr
+                        thead
+                        tbody
+                            tr
+                                td
+                                    strongObjetivos de Aprendizajestrong
+                                    ul
+                                        liQue los estudiantes se familiaricen con el robot XGO V2, sus capacidades de movimiento de alto nivel (15-DoF abstraídos en la API), y la programación en Python. Que, individualmente con Xolo, exploren varias vibes para secuencias de trucos básicos y obtengan el código Python para cada una. Finalmente, en equipo, que organicen estas ideas en un plan de pruebas secuencial para la Sesión 1B.li
+                                    ul
+                                    strongSecuencia de Clasestrong
+                                    ul
+                                        liA.I. GYM (Análisis Profundo)li
+                                        liVIBE CODING (Exploración Individual de Trucos)li
+                                        liANÁLISIS DE CÓDIGO Y PLANIFICACIÓN DE PRUEBASli
+                                        liGNIUS STORM (Cierre de Sesión A)li
+                                    ul
+                                    strongEntregable Clavestrong
+                                    ul
+                                        liPlan de Pruebas Playlist de Trucos documentado por cada equipo, listo para ser implementado en la Sesión 1B.li
+                                    ul
+                                td
+                                td
+                                    strongMateriales Específicosstrong
+                                    ul
+                                        liProyector o pantalla interactiva.li
+                                        liConexión a internet estable.li
+                                        liAcceso al entorno de programación Python.li
+                                        liRobots XGO V2 (1 por cada 4 estudiantes), cargados.li
+                                        liPresentación de diapositivas.li
+                                        liChat de Agente Gnius (Xolo) activo.li
+                                    ul
+                                    strongPreparación Previa para ESTA Sesiónstrong
+                                    ol
+                                        listrongRevisión de Misión (Interna)strong
+                                            ul
+                                                liVerificar conexión a internet y entorno Python.li
+                                                liAsegurar carga de los robots XGO V2.li
+                                                liTener la presentación de diapositivas lista.li
+                                                liProbar el chat Agente Gnius (Xolo).li
+                                            ul
+                                        li
+                                        listrongFamiliarizaciónstrong Revisar el flujo de la sesión, diálogos y tiempos.li
+                                    ol
+                                td
+                            tr
+                        tbody
+                    table
+                div
+            div
+
+            div class=activity-card id=activity-1
+                h2⚡ Actividad 1 A.I. GYM (Análisis Profundo) ⏰ 14 minutosh2
+                pstrongPropósitostrong Introducir el robot XGO, el concepto de abstracción a través de una API y los comandos básicos de programación en Python.p
+                div class=steps
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 1 Bienvenida y Activación de Xolo ⏰ 3 minutosh3
+                            p(Proyectar Diapositiva 2) Da la bienvenida a los estudiantes, contextualiza la sesión de hoy y guíalos para que activen a Xolo en el chat.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Hola, Genios! 👋 ¡Bienvenidos a una nueva aventura robótica! Hoy vamos a conocer a nuestro nuevo compañero de cuatro patas, el increíble robot XGO. Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo 'Hola Xolo, soy Ana y me encantan los videojuegos y los perros'.p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 2 Presentación Conceptual y Comando para Xolo ⏰ 5 minutosh3
+                            p(Proyectar Diapositiva 3) Presenta el robot XGO físico, explica sus características principales y luego instruye a los alumnos sobre cómo pedirle la explicación detallada a Xolo.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant(Muestra el robot XGO físico) Este es el XGO, un robot cuadrúpedo. A diferencia de los robots con ruedas, este tiene 15 'articulaciones' (servomotores) que le permiten moverse como un animal. A esto se le llama tener 15 Grados de Libertad (DoF).p
+                                p class=dialogue assistantLa buena noticia es que no tenemos que programar cada una de las 15 articulaciones. El robot ya tiene un 'cerebro' interno (una API) que sabe cómo caminar, sentarse o saludar. Nosotros solo le daremos comandos de alto nivel, como si le diéramos una orden a una mascota.p
+                                p class=dialogue assistantAhora, para que la explicación sea personalizada para ustedes, escriban en el chat el siguiente comando 'Mi perfil es [escribe aquí tus gustosintereses] y quiero que me enseñes sobre la API del XGO y los comandos básicos de Python'.p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 3 Monitoreo de Interacción y Síntesis ⏰ 6 minutosh3
+                            p(Proyectar Diapositiva 4) Monitorea a los alumnos mientras interactúan con Xolo y resume los puntos clave que están aprendiendo.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está explicando que para controlar al XGO usaremos Python y comandos simples como `xgo.stand()` o `xgo.wag_tail()`. Les está contando sobre la caja negra de la IA del robot que hace todo el trabajo difícil para que esos comandos funcionen.p
+                                p class=dialogue assistantSi algo no queda claro, ¡recuerden que pueden preguntarle directamente a Xolo! Prueben con brstrong '¿Qué es una API'strongbrstrong '¿Por qué necesito escribir `import xgo` al principio'strongbrstrong '¿Qué otros movimientos puede hacer el robot'strongp
+                            div
+                        div
+                    div
+                div
+            div
+
+            div class=activity-card id=activity-2
+                h2⚡ Actividad 2 VIBE CODING (Exploración Individual de Trucos) ⏰ 14 minutosh2
+                pstrongPropósitostrong Permitir a los estudiantes explorar secuencias de movimiento de forma creativa y obtener el código Python correspondiente de la IA.p
+                div class=steps
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 1 Instrucción del Profesor ⏰ 4 minutosh3
+                            p(Proyectar Diapositiva 5) Motiva a los alumnos a convertirse en entrenadores de trucos y a describir sus ideas a Xolo.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Excelente trabajo! Ahora que ya tienen los conceptos, vamos a la parte creativa. Cada uno de ustedes será un 'entrenador de trucos'. Piensen en una secuencia corta y divertida que le podrían enseñar al XGO. Descríbanle su 'vibe' a Xolo y él les dará el código Python para lograrlo. Si no se les ocurre nada, ¡no hay problema! Escriban en el chat con Xolo el comando exacto 'Exploremos ideas juntos'.p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 2 Ejemplos de Interacción ⏰ 10 minutosh3
+                            p(Proyectar Diapositiva 6) Muestra ejemplos de cómo una vibe se traduce en código para que los estudiantes entiendan el proceso.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistantBasado en esa petición, Xolo podría generar un código para ejecutar su idea. ¡Fíjense bien en cómo se estructura!p
+                                p class=dialogue assistantPara una vibe como quiero que el robot se siente, mueva la cola y luego se levante, Xolo generaría este códigop
+                                pre class=dialogue assistant style=color #d32f2f;# Truco Saludo Sentado
+import xgo, time
+xgo.sit()
+time.sleep(1)
+xgo.wag_tail()
+time.sleep(2)
+xgo.stand()pre
+                                p class=dialogue assistantY para una vibe como quiero que el robot dé dos pasos adelante y luego gire a la izquierda, este sería el códigop
+                                pre class=dialogue assistant style=color #d32f2f;# Truco Pequeña Patrulla
+import xgo, time
+xgo.move('forward')
+time.sleep(1)
+xgo.move('forward')
+time.sleep(1)
+xgo.turn('left')pre
+                            div
+                        div
+                    div
+                div
+            div
+
+            div class=activity-card id=activity-3
+                h2⚡ Actividad 3 ANÁLISIS DE CÓDIGO Y PLANIFICACIÓN DE PRUEBAS ⏰ 7 minutosh2
+                pstrongPropósitostrong Fomentar la colaboración y el pensamiento crítico al analizar el código generado y estructurar un plan de acción para la siguiente sesión.p
+                div class=steps
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 1 Análisis en Equipo ⏰ 3 minutosh3
+                            p(Proyectar Diapositiva 7) Organiza a los estudiantes en equipos para que compartan y analicen sus fragmentos de código.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Muy bien, entrenadores! Ahora reúnanse en sus equipos. Cada uno comparta los 'trucos' y el código que les dio Xolo. Miren el código de sus compañeros. Por ejemplo, en el código del 'Saludo Sentado', ¿qué creen que hace la línea `time.sleep(1)` ¿Por qué es importante Discutan y asegúrense de que todos entiendan la lógica de los códigos del equipo.p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 2 Planificación de Pruebas (Actividad Clave) ⏰ 4 minutosh3
+                            p(Proyectar Diapositiva 8) Guía a los equipos para que creen su entregable una Playlist de Trucos ordenada.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Tienen muchas ideas geniales! Como equipo, su misión ahora no es elegir una, sino decidir el orden en el que las van a probar en la próxima clase. Creen una 'Playlist de Trucos' en un documento o en su cuaderno. Este plan es el entregable final de la sesión y lo que usaremos la próxima vez. Aquí tienen un ejemplo de cómo podría versep
+                                ul
+                                    lip class=dialogue assistantstrongPrueba 1strong Probar el Saludo Sentado de [Alumno 1]. strongResultado esperadostrong El robot se sienta, mueve la cola, se levanta.lip
+                                    lip class=dialogue assistantstrongPrueba 2strong Probar la Pequeña Patrulla de [Alumno 2]. strongResultado esperadostrong Da dos pasos y gira.lip
+                                    lip class=dialogue assistantstrongPrueba 3 (Combinación)strong ¿Podemos juntar los dos códigos Primero la patrulla y luego el saludo.lip
+                                ul
+                            div
+                        div
+                    div
+                div
+            div
+
+            div class=activity-card id=activity-4
+                h2⚡ Actividad 4 GNIUS STORM (Cierre de Sesión A) ⏰ 5 minutosh2
+                pstrongPropósitostrong Realizar un cierre rápido donde los equipos comparten sus planes y se genera expectación para la próxima clase práctica.p
+                div class=steps
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 1 Compartir Planes ⏰ 3 minutosh3
+                            p(Proyectar Diapositiva 9) Pide a un portavoz de cada equipo que comparta brevemente su plan.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Muy bien, equipos! Para cerrar, un portavoz de cada equipo va a compartir con la clase el nombre que le pusieron a su 'Playlist de Trucos' y nos va a mencionar los dos primeros trucos que planean probar. ¡Queremos escuchar esas ideas creativas!p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 2 Cierre y Próximos Pasos ⏰ 2 minutosh3
+                            p(Proyectar Diapositiva 10) Concluye la sesión, validando el trabajo de los estudiantes y adelantando la emoción de la siguiente clase.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Excelentes planes de prueba! Ya tienen su código y una estrategia clara. Han hecho un gran trabajo de diseño hoy. En la próxima clase, la Sesión B, se conectarán a los robots y ejecutarán su playlist. ¡Prepárense para ver al XGO en acción y para depurar como verdaderos programadores!p
+                            div
+                        div
+                    div
+                div
+            div
+        main
+    div
+
+    script src=script.jsscript
+body
+html
